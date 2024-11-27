@@ -44,16 +44,16 @@ footer {
     text-align: center;
     padding: 20px;
     background-color: #f6c3e5;
-    color: white;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Seção Home */
 #home {
+    height: 86vh;
     background-image: url('./1.png');
     background-size: cover;
     background-position: center;
-    color: white;
+    color: black;
     text-align: center;
     padding: 100px 20px;
     position: relative;
@@ -72,6 +72,10 @@ footer {
 .container {
     position: relative;
     z-index: 1;
+}
+
+.font-family-ui-sans-serif {
+    font-family: ui-sans-serif;
 }
 
 .container h1 {
@@ -96,7 +100,8 @@ footer {
 }
 
 .image-card {
-    width: 30%; /* Tamanho inicial das imagens */
+    width: 100%;
+    height: 100%;
     position: relative;
     overflow: hidden;
     border-radius: 12px;
@@ -110,8 +115,6 @@ footer {
 }
 
 .image-card img {
-    width: 100%;
-    height: auto;
     border-radius: 12px;
     transition: opacity 0.3s ease;
 }
@@ -143,6 +146,7 @@ footer {
 }
 
 .servicos-container {
+    padding-top: 23vh;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
