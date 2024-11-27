@@ -297,3 +297,50 @@ form button:active {
         width: 90%;
     }
 }
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+caption {
+    caption-side: bottom;
+    padding: 10px;
+    font-weight: bold;
+}
+
+thead, tfoot {
+    background-color: rgb(228 240 245);
+}
+
+th, td {
+    border: 1px solid rgb(160 160 160);
+    padding: 8px 10px;
+}
+
+td:last-of-type {
+    text-align: center;
+}
+
+.tabela {
+    padding-top: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button {
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 2px;
+}
+.edit-btn {
+    background-color: #4CAF50; /* Verde para edição */
+    color: white;
+}
+.delete-btn {
+    background-color: #f44336; /* Vermelho para exclusão */
+    color: white;
+}
