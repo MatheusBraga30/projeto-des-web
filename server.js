@@ -6,6 +6,11 @@ const mysql = require('mysql2');
 const app = express();
 const port = 3000;
 
+const cors = require('cors');
+
+// Configuração do CORS
+app.use(cors());
+
 // Middleware para manipular dados JSON
 app.use(express.json());
 
@@ -26,6 +31,10 @@ db.connect((err) => {
   }
   console.log('Conectado ao banco de dados MySQL');
 });
+
+app.use(cors({
+  origin: 'http://localhost'
+}));
 
 // Rota para criar um novo contato
 app.post('/contato', (req, res) => {
